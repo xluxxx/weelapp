@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>inicio</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+    }
+
+    .white-half {
+        width: 40%; /* Abarca el 40% de la pantalla */
+        height: 100vh;
+        background-color: #F7F5FA; /* Color de fondo blanco */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blue-half {
+        width: 60%; /* Abarca el 60% de la pantalla */
+        height: 100vh;
+        background-color: #4658B9; /* Color de fondo azul */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Alinea los elementos en el centro verticalmente */
+        align-items: center;
+    }
+
+    .message {
+        color: #ffffff; /* Color de texto blanco */
+        font-family: 'Gotham', sans-serif; /* Tipo de letra Gotham */
+        font-size: 24px; /* Tamaño de fuente */
+        margin-bottom: 20px; /* Espacio entre el mensaje y los botones */
+    }
+
+    .botones-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin: 5px;
+        background-color: #ffffff; /* Color de fondo inicial blanco */
+        color: #007bff; /* Color de texto azul */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #007bff; /* Color de fondo al pasar el ratón azul */
+        color: #ffffff; /* Color de texto al pasar el ratón blanco */
+    }
+</style>
+</head>
+<body>
+
+<div class="white-half">
+    <img src="C:\Users\guadalupe\Downloads\imagen1.png">
+</div>
+
+<div class="blue-half">
+    <div class="message">¡Bienvenido!</div> <!-- Mensaje "Bienvenido" arriba -->
+    <div class="message">¿deseas ingresar con profesor o como alumno?</div> <!-- Mensaje "Bienvenido" arriba -->
+    <div class="botones-container">
+        <button onclick="window.location.href='iniciosesion.html';">Profesor</button>
+        <button onclick="window.location.href='iniciosesion.html';">Alumno</button>
+    </div>
+</div>
+
+</body>
+</html>

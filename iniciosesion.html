@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            font-family: 'Gotham', sans-serif;
+        }
+
+        .white-half {
+            width: 40%;
+            height: 100vh;
+            background-color: #4658B9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .white-half img {
+            max-width: 100%;
+            max-height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .blue-half {
+            width: 60%;
+            height: 100vh;
+            background-color: #F7F5FA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-group {
+            width: 300px;
+            padding: 20px;
+            background-color: #4658B9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-family: 'Gotham', sans-serif;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        .register-link a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="white-half">
+
+        <div class="form-group">
+            <h2>Iniciar Sesión</h2>
+            <form action="" name="formulario" method="post">
+                <div class="form-group">
+                    <input type="email" id="correo" name="correo" placeholder="correo" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="contraseña" name="contraseña" placeholder="contraseña" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" onclick="window.location.href='menu.html';">Iniciar Sesión</button>
+                </div>
+            </form>
+            <div class="register-link">
+                <p>¿Aún no tienes cuenta? <a href="crearcuenta.html">Crea una</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-half"></div>
+</body>
+</html>

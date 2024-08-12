@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Colores Personalizados y Imagen</title>
+    <!-- Agregar enlace al CSS de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white; /* Cambié el fondo a blanco */
+        }
+
+        .menu {
+            background-color: #4658B9; /* Color de fondo del menú */
+            overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #F7F5FA; /* Color de fondo al pasar el ratón */
+            color: #4658B9; /* Color del texto al pasar el ratón */
+        }
+
+        /* Estilo para el icono */
+        .menu .icon {
+            padding-right: 5px;
+        }
+
+        /* Estilo para el campo de búsqueda */
+        .menu .search-container {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .menu .search-container input[type="text"] {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .menu .search-container button {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #ddd;
+            border: none;
+            cursor: pointer;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 80%; /* Ajusté el ancho al 80% */
+            margin-top: 50px; /* Ajusté el margen superior para moverla más abajo */
+        }
+
+        .centered-image {
+            max-width: 80%; /* Ajusté el ancho al 80% */
+            max-height: 80vh; /* Ajusta la altura máxima según tus necesidades */
+            margin-top: 50px; /* Ajusté el margen superior para moverla más abajo */
+            align-self: flex-end; /* Centra verticalmente en el lado derecho */
+        }
+
+        .text-container {
+            max-width: 40%; /* Ajusté el ancho al 40% */
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <a href="#perfil"><i class="fas fa-user icon"></i>Perfil</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#ejercicios">Ejercicios</a>
+    <a href="#diario">Diario</a>
+    <div class="search-container">
+        <input type="text" placeholder="Buscar...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+<div class="content-container">
+    <div class="text-container">
+        <p>Algunas tormentas son necesarias, recuerda siempre que eres tu proyecto más importante</p>
+    </div>
+    <img class="centered-image" src="C:\Users\guadalupe\Downloads\imagen3.png" alt="Imagen en el Centro">
+</div>
+
+</body>
+</html>
